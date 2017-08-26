@@ -14,15 +14,15 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/NARUTO',function(req,res){
-   res.send('NARUTO THE SEVENTH HOKAGE OF THE KONOHA VILLAGE'); 
+   res.sendfile(path.join(__dirname,'ui','NARUTO.html')); 
 });
 
 app.get('/SASUKE',function(req,res){
-    res.send('SASUKE THE ONLY UCHICHA ALIVE AFTER ITACHI KILLED ALL THE MEMBER OF THE UCHICHA');
+    res.sendFle(path.join(__dirname,'ui','SASUKE.html'));
 });
 
 app.get('/BORUTO',function(req,res){
-  res.send('BORUTO THE SON OF THE SEVENTH HOKAGE OF KONOHA VILLAGE');
+  res.sendFile(path.join(__dirname,'ui','BORUTO.html'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
