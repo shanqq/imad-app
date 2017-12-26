@@ -5,7 +5,24 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-
+var article = {
+  title:'my hero academia',
+  heading:'midoriya',
+  content:`<p>
+                he is the strongerst super heroews who is the best right now in my terms i like him alot he gives me a goosebumps         
+            </p> <p>
+                he is the strongerst super heroews who is the best right now in my terms i like him alot he gives me a goosebumps         
+            </p> <p>
+                he is the strongerst super heroews who is the best right now in my terms i like him alot he gives me a goosebumps         
+            </p> <p>
+                he is the strongerst super heroews who is the best right now in my terms i like him alot he gives me a goosebumps         
+            </p> <p>
+                he is the strongerst super heroews who is the best right now in my terms i like him alot he gives me a goosebumps         
+            </p> <p>
+                he is the strongerst super heroews who is the best right now in my terms i like him alot he gives me a goosebumps         
+            </p>`
+            
+};
  function createTemplate(data){
     var title=data.title;
      var heading=data.heading;
