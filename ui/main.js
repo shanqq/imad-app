@@ -1,11 +1,8 @@
-
-/*<script>
-
-  window.onscroll = function(){scrollfunction()};
+window.onscroll = function(){scrollfunction()};
 
 function scrollfunction()
 {
- if (document.body.scrollTop >30 || document.documentElement.scrollTop >30)
+ if (document.body.scrollTop >10 || document.documentElement.scrollTop >20)
 {
  	document.getElementById("naav").style.top="0";
 
@@ -16,9 +13,6 @@ document.getElementById("naav").style.top="-50px";
 
 }
 
-</script>*/
-
-<script>
 
 var value=0;
 carousel();
@@ -36,5 +30,3 @@ if (value> x.length) {value = 1}
     x[value-1].style.display = "block"; 
     setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
-
-</script>
