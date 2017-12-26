@@ -24,7 +24,7 @@ var articles = {
             </p>`
             
 },
-'articletwo':{title:'my hero academia',
+    'articletwo':{title:'my hero academia',
   heading:'bakugo',
   content:`<p>
                 he is the strongerst super heroews who is the best right now in my terms i like him alot he gives me a goosebumps         
