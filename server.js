@@ -61,14 +61,6 @@ app.get('/heroacademia',function(req,res){
    res.sendFile(path.join(__dirname,'ui','heroacademia.html'));
 });
 
-app.get('/SASUKE',function(req,res){
-    res.sendFle(path.join(__dirname,'ui','SASUKE.html'));
-});
-
-app.get('/BORUTO',function(req,res){
-  res.sendFile(path.join(__dirname,'ui','BORUTO.html'));
-});
-
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
