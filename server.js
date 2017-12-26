@@ -5,14 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var NARUTO={
-    title:'NARUTO STORY',
-    heading:'NARUTO THE SEVENTH HOKAGE OF THE KONOHA VILLAGE',
-    image:'https://i.pinimg.com/736x/0d/0a/e2/0d0ae232516060efe6b2fd463dafd151--naruto-uzumaki-anime-naruto.jpg',
-    content:`<p>
-                Naruto Uzumaki (うずまきナルト, Uzumaki Naruto) is a shinobi of Konohagakure. He became the jinchūriki of the Nine-Tails on the day of his birth — a fate that caused him to be shunned by most of Konoha throughout his childhood . AfterjoiningTeamKakashi, Naruto worked hard to gain the village's acknowledgement all the while chasing his dream  to become Hokage. In thefollowing years, through many hardships and ordeals, he became a capable ninja regarded as a  heroboth by the villagers,and soon after, the rest of the world, becoming known as the Hero of the Hidden Leaf (木ノ葉隠れの英雄, Konohagakure noEiyū, Literally meaning: Hero of the Hidden Tree Leaves). He soon proved to be one ofthe  main factors in winning the Fourth Shinobi World War, leading him to achieve his dream and become the village's Seventh Hokage (七代目火影,NanadaimHokage, Literally meaning: Seventh Fire Shadow).
-            </p> `
-};
+
  function createTemplate(data){
     var title=data.title;
      var heading=data.heading;
