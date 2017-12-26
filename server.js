@@ -58,7 +58,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/heroacademia',function(req,res){
-   res.send(createTemplate(NARUTO)); 
+   res.sendFile(path.join(__dirname,'ui','heroacademia.html'));
 });
 
 app.get('/SASUKE',function(req,res){
