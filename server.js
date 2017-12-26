@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var article = {
+var articleone = {
   title:'my hero academia',
   heading:'midoriya',
   content:`<p>
@@ -70,7 +70,7 @@ app.get('/articletwo',function(req,res){
     res.sendFile(path.join(__dirname,'ui','articletwo.html'));
 });
 app.get('/articleone',function(req,res){
-   res.sendFile(path.join(__dirname,'ui','articleone.html'));
+   res.send(createTemplate(articleone));
 });
 
 app.get('/heroacademia',function(req,res){
