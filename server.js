@@ -5,7 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleone = {
+var articles = {
+    articleone :{
   title:'my hero academia',
   heading:'midoriya',
   content:`<p>
@@ -22,6 +23,18 @@ var articleone = {
                 he is the strongerst super heroews who is the best right now in my terms i like him alot he gives me a goosebumps         
             </p>`
             
+},
+articletwo:{title:'my hero academia',
+  heading:'bakugo',
+  content:`<p>
+                he is the strongerst super heroews who is the best right now in my terms i like him alot he gives me a goosebumps         
+            </p> <p>
+                he is the strongerst super heroews who is the best right now in my terms i like him alot he gives me a goosebumps         
+            </p> <p>
+                he is the strongerst super heroews who is the best right now in my terms i like him alot he gives me a goosebumps         
+            </p> <p>
+                 
+            </p>`}
 };
  function createTemplate(data){
     var title=data.title;
