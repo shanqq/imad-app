@@ -74,12 +74,12 @@ color:black;
 height:100%;
 }
 
-.left,.right{
+.left,.middle{
 width:25%;
 background-color:#aaa;
 
 }
-.middle{
+.right{
 width:50%;
 }
 
