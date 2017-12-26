@@ -45,7 +45,6 @@ var htmltemplate=`
             <h3>
               ${heading}
             </h3>
-            <img src="https://i.pinimg.com/736x/0d/0a/e2/0d0ae232516060efe6b2fd463dafd151--naruto-uzumaki-anime-naruto.jpg">
         </div>
         <div>
             ${content}
