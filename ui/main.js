@@ -16,9 +16,9 @@ button.onclick=function (){
             span.innerHTML=counter.toString();    
           }
         }
-    }
+    };
     //make a request
-    request.open('GET','http://ansarishaquib25.imad.hasura-app.io/counter,true);
+    request.open('GET','http://ansarishaquib25.imad.hasura-app.io/counter',true);
     request.send(null);
     
 };
