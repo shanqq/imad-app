@@ -1,4 +1,4 @@
-window.onscroll = function(){scrollfunction()};
+/*window.onscroll = function(){scrollfunction()};
 
 function scrollfunction()
 {
@@ -30,3 +30,4 @@ if (value> x.length) {value = 1}
     x[value-1].style.display = "block"; 
     setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
+*/
