@@ -5,8 +5,8 @@ button.onclick=function (){
     //create a request
     var request = new XMLHttpRequest(); 
     
-    //
-    reuest.onreadystatechange=function(){
+    //capturing the response and storing in a variable
+    request.onreadystatechange=function(){
         if(request.readyState===XMLHttpRequest.DONE)
         {
             if(request.status===200)
@@ -17,10 +17,9 @@ button.onclick=function (){
             }
         }
     }
-    //render the counter variable
-    counter=counter+1;
-    var span=document.getElementById("total");
-    span.innerHTML=counter.toString();
+    //make a request
+    request.open('GET','http://ansarishaquib25.imad.hasura-app.io/counter',true);
+    request.send(null);
     
 };
 
