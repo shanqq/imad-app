@@ -11,14 +11,21 @@ button.onclick=function (){
         {
             if(request.status===200)
             {
-            var counter=request.responseText;
-            var span=document.getElementById("total");
-            span.innerHTML=counter.toString();
-            }
+            var names=['name1','name2','name3'];
+            var list='';
+ 
+                        for( var i=0;i<names.length;i++)
+             {
+                 list+='<li>' +names[i]+'</li>';
+                 
+             }
+              var ul=document.getElementById("namelist");
+              ul.innerHTML=list;
+          }
         }
     }
     //make a request
-    request.open('GET','http://ansarishaquib25.imad.hasura-app.io/counter',true);
+    request.open('GET','http://ansarishaquib25.imad.hasura-app.io/submit-name?name=',true);
     request.send(null);
     
 };
