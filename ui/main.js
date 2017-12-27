@@ -5,7 +5,7 @@ button.onclick=function (){
     
     //
     counter=counter+1;
-    var span=document.getElementById('count');
+    var span=document.getElementById('total');
     span.innerHTML=counter.toString();
     
 };
