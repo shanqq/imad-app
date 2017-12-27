@@ -71,6 +71,12 @@ var htmltemplate=`
 return htmltemplate;
 }   
 
+var names=[];
+app.get('/submit-name/:name',function(req,res){
+    var name=req.query.name;
+    names.push(name);
+    res.send(JSON.stringify(names));
+});
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -86,12 +92,7 @@ res.send(counter.toString());
 app.get('/heroacademia',function(req,res){
    res.sendFile(path.join(__dirname,'ui','heroacademia.html'));
 });
-var names=[];
-app.get('/submit-name/:name',function(req,res){
-    var name=req.query.name;
-    names.push(name);
-    res.send(JSON.stringify(names));
-});
+
 app.get('/:articleName',function(req,res){
     var articleName=req.params.articleName;
     res.send(createTemplate(articles[articleName]));
