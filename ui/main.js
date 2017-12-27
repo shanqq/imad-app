@@ -11,6 +11,34 @@ button.onclick=function (){
         {
             if(request.status===200)
             {
+            counter=req.responseText;
+            
+                
+          }
+        }
+    }
+    //make a request
+    request.open('GET','http://ansarishaquib25.imad.hasura-app.io/counter,true);
+    request.send(null);
+    
+};
+
+var namesinput=document.getElementById("name");
+
+var name=namesinput.value;
+
+var submit=document.getElementById("submit-but");
+
+submit.onclick=function(){
+  
+   var request = new XMLHttpRequest(); 
+    
+    //capturing the response and storing in a variable
+    request.onreadystatechange=function(){
+        if(request.readyState===XMLHttpRequest.DONE)
+        {
+            if(request.status===200)
+            {
             var names=request.responseText;
             names=JSON.parse(names);
             var list='';
@@ -28,27 +56,6 @@ button.onclick=function (){
     //make a request
     request.open('GET','http://ansarishaquib25.imad.hasura-app.io/submit-name?name='+name,true);
     request.send(null);
-    
-};
-
-var namesinput=document.getElementById("name");
-
-var name=namesinput.value;
-
-var submit=document.getElementById("submit-but");
-
-submit.onclick=function(){
-  
- var names=['name1','name2','name3'];
- var list='';
- 
- for( var i=0;i<names.length;i++)
- {
-     list+='<li>' +names[i]+'</li>';
-     
- }
-  var ul=document.getElementById("namelist");
-  ul.innerHTML=list;
 };
 
 
