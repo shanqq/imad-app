@@ -23,15 +23,14 @@ button.onclick=function (){
     
 };
 
-var namesinput=document.getElementById("name");
 
-var name=namesinput.value;
 
 var submit=document.getElementById("submit-but");
 
 submit.onclick=function(){
-  
-   var request = new XMLHttpRequest(); 
+    var namesinput=document.getElementById("name");
+    var name=namesinput.value;
+    var request = new XMLHttpRequest(); 
     
     //capturing the response and storing in a variable
     request.onreadystatechange=function(){
@@ -52,7 +51,7 @@ submit.onclick=function(){
               ul.innerHTML=list;
           }
         }
-    }
+    };
     //make a request
     request.open('GET','http://ansarishaquib25.imad.hasura-app.io/submit-name?name='+name,true);
     request.send(null);
