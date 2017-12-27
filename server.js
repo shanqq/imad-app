@@ -84,6 +84,10 @@ app.get('/heroacademia',function(req,res){
    res.sendFile(path.join(__dirname,'ui','heroacademia.html'));
 });
 
+app.get('/:articleName',function(req,res){
+    var articleName=req.params.articleName;
+    res.send(createTemplate(articles[articlesName]));
+});
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
