@@ -8,7 +8,7 @@ var config={
     database:'postgres',
     host:'localhost',
     port:'5432',
-   password:'pain05251998'
+   password:process.env.DB_PASSWORD
     };
 var app = express();
 app.use(morgan('combined'));
