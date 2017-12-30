@@ -4,10 +4,10 @@ var path = require('path');
 var Pool= require('pg').Pool;
 
 var config={
-    user:'postgres',
-    database:'postgres',
-    host:'localhost',
-    port:5432,
+    user:'ansarishaquib25',
+    database:'ansarishaquib25',
+    host:'db.imad.hasura-app.io',
+    port:'5432',
    password:process.env.DB_PASSWORD
     };
 var app = express();
@@ -122,7 +122,6 @@ app.get('/:articleName',function(req,res){
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
-
 
 
 app.get('/ui/main.js', function (req, res) {
