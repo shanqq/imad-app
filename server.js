@@ -6,7 +6,7 @@ var Pool= require('pg').Pool;
 var config={
     user:'postgres',
     database:'postgres',
-    host:'localhost',
+   // host:'localhost',
    password:process.env.DB_PASSWORD
     };
 var app = express();
