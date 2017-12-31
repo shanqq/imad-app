@@ -3,18 +3,19 @@ var morgan = require('morgan');
 var path = require('path');
 var Pool= require('pg').Pool;
 
-var config={
+/*var config={
     user:'postgres',
     database:'postgres',
     host:'localhost',
     port:'5432',
    password:process.env.DB_PASSWORD
     };
+    */
 var app = express();
 app.use(morgan('combined'));
 
 var articles = {
-   'article-one' :{
+   'articleone' :{
   title:'my hero academia',
   heading:'midoriya',
   content:`<p>
@@ -32,7 +33,7 @@ var articles = {
             </p>`
             
 },
-    'article-two':{title:'my hero academia',
+    'articletwo':{title:'my hero academia',
   heading:'bakugo',
   content:`<p>
                 he is the strongerst super heroews who is the best right now in my terms i like him alot he gives me a goosebumps         
@@ -87,6 +88,7 @@ app.get('/', function (req, res) {
 });
 var pool=new Pool(config);
 
+
 app.get('/test-db',function (req,res){
     pool.query('SELECT * from test',function(err,result){
         if(err){
@@ -136,3 +138,6 @@ var port = 80;
 app.listen(port, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
+
+
+
